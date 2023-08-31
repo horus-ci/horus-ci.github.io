@@ -1,5 +1,5 @@
 <?php
-	$to = "your@email.example"; // Recipient Email Address
+	$to = "smckee@umich.edu"; // Recipient Email Address
 	
 	$errors = array();
 	

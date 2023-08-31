@@ -8,11 +8,11 @@ order: 0
 ---
 {% include JB/setup %}
 
-HORUS will provide three distinct types of computational nodes, co-located with existing OSiRIS storage infrastructure and connected to an existing 100 Gbps research network. open source software makes the resource broadly available, including to researchers outside the region via the OSG/PATh sharing described below.
+HORUS provides three distinct types of computational nodes, co-located with existing OSiRIS storage infrastructure and connected to an existing 100 Gbps research network. open source software makes the resource broadly available, including to researchers outside the region via the OSG/PATh sharing described below.
 
 ## Hardware
 
-We have identified three types of computational servers that can allow us to support a broad range of use-cases: compute servers for high-throughput, compute servers for large memory, and compute servers for GPU tasks. The table below summarizes the characteristics of each.
+We have identified three types of computational servers that allow us to support a broad range of use-cases: compute servers for high-throughput, compute servers for large memory, and compute servers for GPU tasks. The table below summarizes the characteristics of each.
 
 ### HORUS Computing System Details
 
@@ -81,7 +81,7 @@ We have identified three types of computational servers that can allow us to sup
 
 Dynamic partitioning of server resources is expected to be a main feature. For example, some of our GPU users simply need a single CPU and associated memory to match the total memory of a GPU. A server with four GPUs would only require assigning four hyper-threaded CPUs and about 320G of memory, leaving 28 CPUs and 192G of memory idle. We need to be able to dynamically make those CPUs and memory accessible for other jobs that just require one or more CPUs and a smaller amount of memory.
 
-OSiRIS combined with HORUS makes a great enabler for many of the science domains in the project. Currently, OSiRIS has approximately 6 Petabytes of raw storage available for use, out of 13.5 Petabytes deployed. Using erasure-coding techniques (8+3), the 6 Petabytes translates into roughly 4.3 PB of usable space that did not need to be paid for by HORUS.
+OSiRIS combined with HORUS makes a great enabler for many of the science domains in the project. Currently, OSiRIS has approximately 6 Petabytes of raw storage available for use, out of 12.0 Petabytes deployed. Using erasure-coding techniques (8+3), the 6 Petabytes translates into roughly 4.3 PB of usable space that did not need to be paid for by HORUS.
 
 ## High-Performance Network
 
@@ -119,15 +119,17 @@ __Authentication and Authorization__
 
 __Resource allocation and management__
 
-- __HTCondor__, used to manage fair-share access for computational tasks
-- __HTCondor-CE__, a meta-scheduler used as a “door” to a set of resources
-- __NVIDIA MIG__, used to subdivide a GPU (cores and memory) into up to seven smaller       instances, allowing more jobs to share a GPU
-- __Ceph__, with quotas to manage storage use in OSiRIS
+- __HTCondor__, used to manage fair-share access for computational tasks.
+- __HTCondor-CE__, a meta-scheduler used as a “door” to a set of resources.
+- __SLURM__, use to schedule jobs and interface with Open OnDemand (OOD).
+- __OOD__, Open OnDemand which provides a user web interface to HORUS resources.
+- __NVIDIA MIG__, used to subdivide a GPU (cores and memory) into up to seven smaller instances, allowing more jobs to share a GPU.
+- __Ceph__, with quotas to manage storage use in OSiRIS.
 
 __Monitoring and Accounting__
-- __Elasticsearch__, gathers data from syslogs and other sources for aggregation, visualization, analytics, and correlation
-- __CheckMK__, intelligent server and host monitoring system capable of validating service states and tracking resource usage
-- __perfSONAR__, used to test and monitor network behavior across infrastructure
-- __RHEL8__, for accounting and auditing to augment usage and security information
+- __Elasticsearch__, gathers data from syslogs and other sources for aggregation, visualization, analytics, and correlation.
+- __CheckMK__, intelligent server and host monitoring system capable of validating service states and tracking resource usage.
+- __perfSONAR__, used to test and monitor network behavior across infrastructure.
+- __AlmaLinux9__, for accounting and auditing to augment usage and security information.
 
 Deployments of many of these tools (CoManage, Grouper, Elasticsearch, CheckMK, perfSONAR) already were in place for OSiRIS and have been reconfigured to accommodate HORUS. HTCondor is the HORUS batch scheduler, used with OSG/PATh to configure the appropriate connection to users' hosted Compute Element (CE) based upon HTCondor-CE. The HTCondor services, as well as all other required HORUS services, will rely on the virtualization platform already in place for OSiRIS. This virtualization platform includes four powerful virtualization hosts at each of our sites (UM, MSU, WSU) running libvirt. In addition, we have access to SLATE infrastructure, which provides the ability to orchestrate containers via Kubernetes if particular tools or jobs would benefit from that.

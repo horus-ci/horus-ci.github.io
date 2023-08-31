@@ -17,7 +17,7 @@ The project has two primary phases. The first year is devoted to developing, tun
 - ✔️ Set up Mattermost, mailing lists
 
 ### Months 3-6 — Initial Deployment
-- ✔️ Deploy hardware (delayed till May 2026)
+- ✔️ Deploy hardware (delayed till May 2023)
 - ✔️ Identify science domains for onboarding
   - ✔️ Mathematics of Turbulent 3D Flows / Kyle Schwiebert / Michigan Tech University
   - ✔️ Network Telescope / Michael Kallitsis / Merit

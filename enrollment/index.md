@@ -1,11 +1,11 @@
 ---
 layout: default
-title : Thank you for enrolling in HORUS!
-header : HORUS Enrollment
+title : Thank you for enrolling in HORUS/OSiRIS!
+header : HORUS/OSiRIS Enrollment
 ---
 {% include JB/setup %}
 
-Welcome to the Open Storage Research Infrastructure!  To finish enrollment there are a couple more steps.  
+Welcome to the HORUS!  To finish enrollment there are a couple more steps.  
 
 <h2>Confirm your email</h2>
 

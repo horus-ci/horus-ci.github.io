@@ -121,7 +121,7 @@ __Resource allocation and management__
 
 - __HTCondor__, used to manage fair-share access for computational tasks.
 - __HTCondor-CE__, a meta-scheduler used as a “door” to a set of resources.
-- __SLURM__, use to schedule jobs and interface with Open OnDemand (OOD).
+- __SLURM__, used to schedule jobs and interface with Open OnDemand (OOD).
 - __OOD__, Open OnDemand which provides a user web interface to HORUS resources.
 - __NVIDIA MIG__, used to subdivide a GPU (cores and memory) into up to seven smaller instances, allowing more jobs to share a GPU.
 - __Ceph__, with quotas to manage storage use in OSiRIS.

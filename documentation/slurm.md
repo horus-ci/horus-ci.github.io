@@ -1,15 +1,15 @@
 ---
 layout: default
 title : SLURM
-tagline: Basic Overview on SLURM
+tagline: Basic Overview
 group: documentation
 subnavgroup: documentation
 ---
 {% include JB/setup %}
 
-SLURM is highly scalable cluster management and job scheduling system for large and small Linux clusters. In HORUS, you can use Open OnDemand to access compute resources, run and monitor your work. We show here how you can submit a job to a specific SLURM partition. If you would like to read more about SLURM, visit the official <a href="https://slurm.schedmd.com/quickstart.html">SLURM Quick Start User Guide</a>
+SLURM is highly scalable cluster management and job scheduling system for large and small Linux clusters. In HORUS, you can use Open OnDemand to access compute resources, run and monitor your work, and download your work result once it's done processing. We show here how you can submit a job to a specific SLURM partition. If you would like to read more about SLURM, visit the official <a href="https://slurm.schedmd.com/quickstart.html">SLURM Quick Start User Guide</a>
 
-To be able to submit a SLURM job in HORUS, you would need to know and set some parameters for the SLURM scheduler so that your job can get scheduled on the right resources. To demonstrate this, we'll create a test bash script and set the SLURM parameters in the script as bash comments but with speciffic syntax. 
+To be able to submit a SLURM job in HORUS, you would need to know and set some parameters for SLURM scheduler so that your job can get scheduled on the right processing queue. To demonstrate this, we'll create a test bash script and set the SLURM parameters in the script as bash comments but with speciffic syntax. 
 
 <h2>Create a New Job</h2>
 
@@ -19,7 +19,7 @@ Log into the <a href="https://wsu-ondemand.osris.org">HORUS Open OnDemand</a>, a
 
 You should now see a job template where you can view the job details and submit script. Click on "Open Editor" to put your script.
 
-<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/ood-submit_script.png" alt="Submit Script"/>
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/ood_submit_script.png" alt="Submit Script"/>
 
 In the editor window, enter the following bash code and click 'Save'
 

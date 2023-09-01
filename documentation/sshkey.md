@@ -30,7 +30,7 @@ Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 </pre>
 
-Keep the 'id_rsa' file private and protected.  The contents of id_rsa.pub will be uploaded to OSiRIS.  
+Keep the 'id_rsa' file private and protected.  The contents of id_rsa.pub will be uploaded to HORUS.  
 
 <h2>Uploading public key to HORUS</h2>
 

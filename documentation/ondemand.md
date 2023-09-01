@@ -1,7 +1,7 @@
 ---
 layout: default
 title : Open OnDemand
-tagline: Open OnDemand
+tagline:
 group: documentation
 subnavgroup: documentation
 ---

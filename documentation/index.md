@@ -7,9 +7,9 @@ subnavgroup: documentation
 ---
 {% include JB/setup %}
 
-[Placeholder - more to come]
 
-We've included here instructions for HORUS users who would to enroll in the project to use its resources and services for their reserch projects.
+
+Here are some instructions for users who would like to enroll in HORUS to use its resources and services for their research projects.
 
 Questions:  <a href="mailto:horus-help@umich.edu">horus-help@umich.edu</a>
 
@@ -35,6 +35,10 @@ How to upload your ssh key so you can use HORUS ssh/scp/sftp gateways
  How to create SLURM jobs, and select job queues based on your project needs 
 </p>
 
+<a href="horusphotos.html">HORUS Hardware:</a> Photos of the deplyed HORUS systems
+
+To learn about OSiRIS, please visit: <a href="http://www.osris.org/about">http://www.osris.org/about</a> 
+
 <h3>Architectural Documentation</h3>
 
-If you are interested in how HORUS is structured or in creating a deployment similar to HORUS, please contact us..
+If you are interested in how HORUS is structured or in creating a deployment similar to HORUS, please contact us.

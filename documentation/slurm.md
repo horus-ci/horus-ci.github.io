@@ -2,6 +2,7 @@
 layout: default
 title : SLURM
 tagline: Basic Overview
+order: 20
 group: documentation
 subnavgroup: documentation
 ---

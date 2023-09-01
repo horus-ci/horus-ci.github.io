@@ -2,6 +2,7 @@
 layout: default
 title : SSH Keys
 tagline: Creating and Uploading an SSH key
+order: 25
 group: documentation
 subnavgroup: documentation
 ---

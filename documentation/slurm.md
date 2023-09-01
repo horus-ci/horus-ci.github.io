@@ -1,0 +1,44 @@
+---
+layout: default
+title : SLURM
+tagline: Basic Overview on SLURM
+group: documentation
+subnavgroup: documentation
+---
+{% include JB/setup %}
+
+SLURM is highly scalable cluster management and job scheduling system for large and small Linux clusters. In HORUS, you can use Open OnDemand to access compute resources, run and monitor your work. We show here how you can submit a job to a specific SLURM partition. If you would like to read more about SLURM, visit the official <a href="https://slurm.schedmd.com/quickstart.html">SLURM Quick Start User Guide</a>
+
+To be able to submit a SLURM job in HORUS, you would need to know and set some parameters for the SLURM scheduler so that your job can get scheduled on the right resources. To demonstrate this, we'll create a test bash script and set the SLURM parameters in the script as bash comments but with speciffic syntax. 
+
+<h2>Create a New Job</h2>
+
+Log into the <a href="https://wsu-ondemand.osris.org">HORUS Open OnDemand</a>, and navigate to the Job Composer as shown below:
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/ood-jobs-menu.png" alt="OnDemand Jobs"/>
+
+You should now see a job template where you can view the job details and submit script. Click on "Open Editor" to put your script.
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/ood-submit_script.png" alt="Submit Script"/>
+
+In the editor window, enter the following bash code and click 'Save'
+
+	#!/bin/bash
+	# JOB HEADERS HERE
+	# This sets the partition we’re requesting. Other options are lm and gp
+	#SBATCH -p lc
+	hostname
+	sleep 60
+	echo "Hello World from a HORUS large Compute (lc) node"
+
+Go back to the previous page, and click on 'submit' as shown here:
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/ood_job_submit.png" alt="SLURM Job Submit"/>
+
+To view all active jobs you submitted, go to the Open OnDemand home page, and then click on Jobs -> Active Jobs. It would list something like this:
+
+<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/slurm/ood_active_jobs.png" alt="Active Jobs"/>
+
+For more information on the SLURM options you can use in your script, please see the documentation for the <a href="https://slurm.schedmd.com/sbatch.html">sbatch</a> command.
+
+

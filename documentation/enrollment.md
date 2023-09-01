@@ -3,6 +3,7 @@ layout: default
 title : Enrolling
 tagline: Joining a HORUS Virtual Organization
 header : Enrolling in HORUS
+order: 10
 group: documentation
 subnavgroup: documentation
 ---

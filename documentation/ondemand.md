@@ -2,6 +2,7 @@
 layout: default
 title : Open OnDemand
 tagline:
+order: 15
 group: documentation
 subnavgroup: documentation
 ---

@@ -35,7 +35,7 @@ How to upload your ssh key so you can use HORUS ssh/scp/sftp gateways
  How to create SLURM jobs, and select job queues based on your project needs 
 </p>
 
-<a href="horusphotos.html">HORUS Hardware:</a> Photos of the deplyed HORUS systems
+<a href="horusphotos.html">HORUS Hardware:</a> Photos of the deployed HORUS systems
 
 To learn about OSiRIS, please visit: <a href="http://www.osris.org/about">http://www.osris.org/about</a> 
 

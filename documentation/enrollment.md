@@ -8,7 +8,6 @@ subnavgroup: documentation
 ---
 {% include JB/setup %}
 
-[Placeholder - more to come]
 
 HORUS is an addon to OSiRIS providing users with easy access to large compute resources that are backed with storage infrastructure to meet the needs of research universities in the state of Michigan.  Users of HORUS belong to virtual organizations which are called 'COU' within HORUS.  
 
@@ -37,10 +36,13 @@ After submitting the form you'll see a confirmation page.  The instructions ther
 
 After you have verified your email, a HORUS administrator or your virtual organization administrator will approve your enrollment.  Another email will be sent.  Once approved you can <a href="https://comanage.osris.org/registry/auth/login" target="_new">login to COmanage</a>.  Depending on how you plan to use HORUS there may be no further need for you to interact with COManage.   
 
+<!-- this seems to be no longer relevant in the new version of COmanage especially for one-CO registry, so I'm commenting this out -MA
+
 When you login to COManage there will be a screen to select collaboration.  Please click on 'HORUS/OSiRIS'.
 
 <img style="width: 70%" src="{{IMAGE_PATH}}/documentation/enrollment/Comanage-collaborations.png" alt="COmanage collaboration screen"/>
 
+-->
 <h3>What Next?</h3>
 
 To access your storage space on HORUS with ssh/scp/sftp you need to <a href="sshkey.html">upload an SSH key</a>. 
@@ -55,7 +57,7 @@ Depending on how you share data you may not need to enroll every person you coll
 
 For ssh/scp/sftp access:  Every user needing to login and read data must enroll and upload an ssh key.
 
-For Globus access:  A single user can configure Globus shares accessible by Globus users or groups.  The other users do not need to enroll in OSiRIS, they only need to be able to login to Globus with CIlogon and be allowed to access your share.  Please have a look at the <a href="https://docs.globus.org/how-to/share-files/">Globus.org documentation</a> for information.
+For Globus access:  A single user can configure Globus shares accessible by Globus users or groups.  The other users do not need to enroll in HORUS, they only need to be able to login to Globus with CIlogon and be allowed to access your share.  Please have a look at the <a href="https://docs.globus.org/how-to/share-files/">Globus.org documentation</a> for information.
  
 
 <h3>What is my COU?</h3>

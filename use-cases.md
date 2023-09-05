@@ -291,3 +291,8 @@ __Certificate Program in Data Science — Oakland Community College__: The Data 
         </tr>
     </tbody>
 </table>
+
++++ Additional Use Cases (after webinars)
+
+__Large Eddy Simulation with Correction__: Large eddy simulation (LES) turbulence models have proven themselves useful tools in modeling the incompressible Navier-Stokes equations as well as coupled problems such as fluid-fluid interaction and magnetohydrodynamic flows. However, they often prove too computationally expensive in practical applications. Large eddy simulation with correction (LES-C) is a new class of turbulence models, built on the existing LES models, which has been shown both theoretically and in simulations to resolve flows more quickly. This is done by leveraging an easily-parallelizable defect-correction loop on the modeling error. However, current research is preliminary and focuses on idealized simulations. High performance computing resources are needed to test the models on a more real-world suite of test cases and verify their utility on larger parallel architectures.
+

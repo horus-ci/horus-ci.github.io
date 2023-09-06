@@ -8,7 +8,13 @@ subnavgroup: overview
 ---
 {% include JB/setup %}
 
-The project has two primary phases. The first year is devoted to developing, tuning, and integrating the initial hardware and software components at our sites, while focusing on onboarding early-adopter science domains. The second year we plan to complete the hardware installation (with updates to configurations and type of resources based on the first year) and open the infrastructure to the rest of our planned users and new researchers found via our outreach.
+The project has two primary phases. The first year is devoted to developing, tuning, and integrating the initial hardware and software components at our sites, while focusing on onboarding early-adopter science domains. The second year we plan to complete the hardware installation (with updates to configurations and type of resources based on the first year) and open the infrastructure to the rest of our planned users and new researchers found via our outreach.   The set of milestones/activities and their status are shown below.
+
+| Symbol | Meaning  |
+| ------ | -------- |
+| ✔️  | Completed task |
+| 🔶  | Task underway but not complete |
+| ❗  | Task delayed, typically because of dependency not being ready |
 
 ### Startup — First Two Months
 - ✔️ Hold a kick-off meeting with research stakeholders to formalize HORUS plans including interface software development, outreach and hardware plans

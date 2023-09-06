@@ -10,7 +10,7 @@ subnavgroup: documentation
 {% include JB/setup %}
 
 
-HORUS is an addon to OSiRIS providing users with easy access to large compute resources that are backed with storage infrastructure to meet the needs of research universities in the state of Michigan.  Users of HORUS belong to virtual organizations which are called 'COU' within HORUS.  
+HORUS is an addon to OSiRIS providing users with easy access to large compute resources that are backed with storage infrastructure to meet the needs of research universities in the state of Michigan.  Users of HORUS belong to virtual organizations which are called 'COU' within HORUS.   **Note that HORUS, and our underlying OSiRIS project, depend upon having the user's member institutions being participants in InCommon, specifically the Federation component.**   You can check if you institute already participates at https://incommon.org/community-organizations/ (look for the Federation icon when you look up your institution).   If your institution does not currently participate, we can try to help you to push for them to do so.  More details at https://incommon.org/federation/federation-join/ 
 
 
 <h3>Getting started</h3>

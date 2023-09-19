@@ -14,3 +14,5 @@ HORUS also takes advantage of one of Michigan's tech assets, the first-class fib
 With computing, storage, and communications resources in hand, more of Michigan's scientific minds can study, test, analyze, and educate. HORUS sets the stage for scientific discovery and prepares students for emerging 21 century technologies.
 
 The project formally began on Sept. 1, 2022, and has an estimated end date of Aug. 31, 2024.
+
+We have a HORUS project webinar recording available <a href="https://youtu.be/Klyuhfdlgug">online</a>, originally given on December 13, 2022.

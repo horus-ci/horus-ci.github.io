@@ -14,7 +14,7 @@ HORUS provides three distinct types of computational nodes, co-located with exis
 
 We have identified three types of computational servers that allow us to support a broad range of use-cases: compute servers for high-throughput, compute servers for large memory, and compute servers for GPU tasks. The table below summarizes the characteristics of each.
 
-### HORUS Computing System Details
+### HORUS Planned Computing System Details
 
 <table class="styled-table">
     <thead>

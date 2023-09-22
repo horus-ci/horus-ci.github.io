@@ -10,7 +10,7 @@ order: 1
 HORUS is a collaboration of Merit Network, University of Michigan, Wayne State University, and Michigan State University. Funded by a $1 million grant under the National Science Foundation's Campus Cyberinfrastructure program, HORUS seeks to unleash the scientific potential of the broader higher education community in Michigan. The project aims to do this by providing a higher level of computing resources to community colleges and universities — and tying it to the predecessor OSiRIS program to similarly provide distributed storage resources.
 
 <!-- <img style="width: 100%" src="/assets/images/Merit-Backbone-Project-HORUS-v3.png" alt="HORUS Network Map"/> -->
-<img style="width: 50%" src="{{IMAGE_PATH}}/Merit-Backbone-Project-HORUS-v3.png" alt="HORUS Network Map"/>
+<img style="width: 80% ;height: 80%" src="{{IMAGE_PATH}}/Merit-Backbone-Project-HORUS-v3.png" alt="HORUS Network Map"/>
 
 HORUS also takes advantage of one of Michigan's tech assets, the first-class fiber-optic network operated by Merit Network. This has been coupled with a high-speed research network created as part of the OSiRIS project.
 

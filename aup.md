@@ -1,7 +1,7 @@
 ---
 layout: default
-title : HORUS Acceptable Use Policy
-tagline: Horus
+title : AUP
+tagline: 
 header : AUP
 group: navigation
 order: 4
@@ -9,7 +9,7 @@ order: 4
 {% include JB/setup %}
 
 
-<!-- # HORUS Acceptable Use Policy -->
+# HORUS Acceptable Use Policy
 
 *By registering as a user you declare that you have read, understood and will abide by the following conditions of use:*
 

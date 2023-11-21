@@ -66,7 +66,7 @@ Launch your HORUS Desktop, and then open a terminal window as shown.
 
 <img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/desktop_terminal.png" alt="Desktop Terminal"/>
 
-In the terminal:
+In the terminal window:
  
 - Load the EasyBuild Environment by running the command `load_eb_env_vars`
 - Search for the app build files you need. e.g. `eb -S miniconda`

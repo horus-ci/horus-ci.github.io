@@ -40,6 +40,47 @@ To view all active jobs you submitted, go to the Open OnDemand home page, and th
 
 <img style="width: 100%" src="{{IMAGE_PATH}}/documentation/slurm/ood_active_jobs.png" alt="Active Jobs"/>
 
+
+# Building Software
+
+HORUS also uses <a href="https://docs.easybuild.io">EasyBuild</a> to allow users to build the software they need, and then use that in their jobs without needing to be 'root'. To build your software on HORUS using EasyBuild, follow the below steps:
+
+- Log into <a href="https://wsu-ondemand.osris.org">HORUS Open OnDemand</a>, and create an interactive desktop session by clicking on ‘HORUS Desktop’
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/interactive_apps.png" alt="Interactive Apps"/>
+
+- Specify the resources you need, including GPU details if needed, and click on Launch.
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/desktop_resources.png" alt="Desktop Resources"/>
+
+HORUS will allocate the resources and update the status to Running when it’s ready.
+
+Once the desktop is ready, you’ll see what host it’s running on, and time remaining.
+
+- Adjust the compression and image quality as desired. For slower connections, choose high compression and low image quality.
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/desktop_launch.png" alt="Launch HORUS Desktop"/>
+
+- Launch your HORUS Desktop, and then open a terminal window as shown.
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/desktop_terminal.png" alt="Desktop Terminal"/>
+
+In the terminal:
+ 
+- Load the EasyBuild Environment by running the command `load_eb_env_vars`
+- Search for the app build files you need. e.g. `eb -S miniconda`
+- Select  the software and version you need and build it with the `eb` command as shown ( –prefix should point to a location in your home directory).
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_eb_env.png" alt="EasyBuild"/>
+
+To use software:
+
+- Update module path by running `module use <path-to-apps-modules>`
+- Check available modules by running `module avail`
+- Load the module you need as shown.
+
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_apps_as_modules.png" alt="Load EB Modules"/>
+
 For more information on the SLURM options you can use in your script, please see the documentation for the <a href="https://slurm.schedmd.com/sbatch.html">sbatch</a> command.
 
 

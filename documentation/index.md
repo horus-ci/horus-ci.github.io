@@ -19,13 +19,9 @@ Questions:  <a href="mailto:horus-help@umich.edu">horus-help@umich.edu</a>
 
 How to enroll in your HORUS COU and obtain access to Open OnDemand and SLURM
 
-<a href="sshkey.html">Uploading an SSH key:</a>
+<a href="sshkey.html">Uploading an SSH key:</a> How to upload your ssh key so you can use HORUS ssh/scp/sftp gateways
 
-How to upload your ssh key so you can use HORUS ssh/scp/sftp gateways
-
-<a href="ondemand.html">Accessing Open OnDemand:</a>
- How to access Open OnDemand and upload your data into your HORUS work space
-
+<a href="ondemand.html">Accessing Open OnDemand:</a> How to access Open OnDemand and upload your data into your HORUS work space
 
 <a href="slurm.html">Using SLURM:</a>
  How to create SLURM jobs, and select job queues based on your project needs 

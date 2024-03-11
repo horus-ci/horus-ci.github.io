@@ -15,9 +15,7 @@ Questions:  <a href="mailto:horus-help@umich.edu">horus-help@umich.edu</a>
 
 <h3>User Documentation</h3>
 
-<a href="enrollment.html">Enrolling in HORUS:</a> 
-
-How to enroll in your HORUS COU and obtain access to Open OnDemand and SLURM
+<a href="enrollment.html">Enrolling in HORUS:</a> How to enroll in your HORUS COU and obtain access to Open OnDemand and SLURM
 
 <a href="sshkey.html">Uploading an SSH key:</a> How to upload your ssh key so you can use HORUS ssh/scp/sftp gateways
 

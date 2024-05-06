@@ -74,7 +74,7 @@ In the terminal window:
 - To search for an app build files in EasyBuild, run `eb -S <app-key-word>`.
 	- Select the software and version you need from EasyBuild and build it with the `eb` command like this: `eb <app-name.eb> --robot --prefix <path-to-your-eb-app-dir>` ( –prefix should point to a location in your home directory, and this directory location will be used to software you build).
 
-<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_eessi_and_eb2.png" alt="EasyBuild"/>
+<img style="width: 85%" src="{{IMAGE_PATH}}/documentation/slurm/load_eessi_and_eb2.png" alt="EasyBuild"/>
 
 
 To use the software in your code:

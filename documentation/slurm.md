@@ -46,7 +46,7 @@ For more information on the SLURM options you can use in your script, please see
 
 # Building Software
 
-HORUS also uses <a href="https://docs.easybuild.io">EasyBuild</a> to allow users to build the software they need, and then use that in their jobs without needing to be 'root'. Here is how you can build your software on HORUS using EasyBuild:
+HORUS also uses <a hreff="https://www.eessi.io/docs/">European Environment for Scientific Software Installations (EESSI)</a> and <a href="https://docs.easybuild.io">EasyBuild</a> to allow users to build the software they need, and then use what they built in their jobs without needing to be 'root'. Here is how you can build your software on HORUS using EasyBuild:
 
 Log into <a href="https://wsu-ondemand.osris.org">HORUS Open OnDemand</a>, and create an interactive desktop session by clicking on ‘HORUS Desktop’
 
@@ -68,17 +68,28 @@ Launch your HORUS Desktop, and then open a terminal window as shown.
 
 In the terminal window:
  
-- Load the EasyBuild Environment by running the command `load_eb_env_vars`
-- Search for the app build files you need. e.g. `eb -S miniconda`
-- Select  the software and version you need and build it with the `eb` command as shown ( –prefix should point to a location in your home directory).
+- Load the EESSI environment for your bash session by running the following: `source /usr/local/bin/load_eessi_env` 
+- To search for a specific software in EESSI, you can run `module spider <key-word>`. For example, `module spider gcc` or `module spider easybuild`.
+	- If you find the software you need in EESSI, you can just load it and use it without having to go through the build process. The command to load the software: `module load <software-name>`
+- To search for an app build files in EasyBuild, run `eb -S <app-key-word>`.
+	- Select the software and version you need from EasyBuild and build it with the `eb` command like this: `eb <app-name.eb> --robot --prefix <path-to-your-eb-app-dir>` ( –prefix should point to a location in your home directory, and this directory location will be used to software you build).
 
-<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_eb_env.png" alt="EasyBuild"/>
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_eessi_and_eb2.png" alt="EasyBuild"/>
 
-To use software:
 
-- Update module path by running `module use <path-to-apps-modules>`
-- Check available modules by running `module avail`
-- Load the module you need as shown.
+To use the software in your code:
+
+If you're using a software from the EESSI software stack, all you need to do is loading the EESSI environment, and then the software. As an example, to use Perl, run the below two commands:
+
+- `source /usr/local/bin/load_eessi_env`
+- `module load Perl`
+
+But if you would like to use software you built using EasyBuild, then you need to:
+
+- Load EESSI and EasyBuild by running: `source /usr/local/bin/load_eessi_env` 
+- Update module path by running: `module use <path-to-your-eb-app-dir>/modules/all`
+- Optional: Check available modules by running `module avail`. (You don't need to run this in your code, but this would be useful when you're trying the steps manually in bash and would like to see what modules are available to load in your environment)
+- Load the module you need, for example `module load Miniconda3/23.5.2-0` to laod Miniconda v23.5.2.
 
 <img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_apps_as_modules.png" alt="Load EB Modules"/>
 

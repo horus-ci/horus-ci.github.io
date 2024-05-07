@@ -89,7 +89,7 @@ But if you would like to use software you built using EasyBuild, then you need t
 - Load EESSI and EasyBuild by running: `source /usr/local/bin/load_eessi_env` 
 - Update module path by running: `module use <path-to-your-eb-app-dir>/modules/all`
 - Optional: Check available modules by running `module avail`. (You don't need to run this in your code, but this would be useful when you're trying the steps manually in bash and would like to see what modules are available to load in your environment)
-- Load the module you need, for example `module load Miniconda3/23.5.2-0` to laod Miniconda v23.5.2.
+- Load the module you need, for example `module load Miniconda3/23.5.2-0` to load Miniconda v23.5.2.
 
 <img style="width: 50%" src="{{IMAGE_PATH}}/documentation/slurm/load_apps_as_modules.png" alt="Load EB Modules"/>
 

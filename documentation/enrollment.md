@@ -17,7 +17,10 @@ HORUS is an addon to OSiRIS providing users with easy access to large compute re
 
 <h3>Getting started</h3>
 
-You can enroll at this URL:  <a href="https://comanage.osris.org/enroll">https://comanage.osris.org/enroll</a>
+##### Important Note: 
+**If this is your first time to use HORUS/OSiRIS or if a COU, aka Virtual Organization, has not been created for your science domain or team, please contact the HORUS team first at horus-help@umich.edu to have a COU set up for you before going through the below steps. Once the COU is set up, you can proceed with the following enrollment steps.** 
+
+If you know which COU to join, you can enroll at this URL:  <a href="https://comanage.osris.org/enroll">https://comanage.osris.org/enroll</a>
 
 Your institutional identity will be used to login. The beginning screen prompts users to choose an organization, for example, the University of Michigan. 
 

@@ -86,7 +86,7 @@ We have identified three types of computational servers that allow us to support
             <td>-</td>
             <td>-</td>
             <td>2x100G</td>
-            <td>6</td>
+            <td>7</td>
             <td>1344</td>
             <td>8.0</td>
         </tr>

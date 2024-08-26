@@ -24,6 +24,8 @@ Questions:  <a href="mailto:horus-help@umich.edu">horus-help@umich.edu</a>
 <a href="slurm.html">Using SLURM:</a>
  How to create SLURM jobs, and select job queues based on your project needs 
 
+<a href="osgengage.html">OSG Engagement:</a> Details about our work with the OSG-PATh project to make HORUS broadly accessible
+ 
 <a href="horusphotos.html">HORUS Hardware:</a> Photos of the deployed HORUS systems
 
 To learn about OSiRIS, please visit: <a href="http://www.osris.org/about">http://www.osris.org/about</a> 

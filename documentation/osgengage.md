@@ -17,7 +17,7 @@ We completed HORUS integration with OSG-PATh on January 4, 2024 and details for 
 <a href="https://gracc.opensciencegrid.org/goto/_QjmxOqIg?orgId=1">HORUS Site Summary for OSG jobs</a>
 
 The weekly core-hours provided by HORUS and used by OSG jobs from January 4, 2024 through August 25, 2024 are shown in the figure below.  Note that the TOTAL possible weekly core-hours available on HORUS were 591,360.
-<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/osgengagement/HORUS-OSG-core-hours.png" alt="HORUS OSG Core-Hours"/>
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/osgengage/HORUS-OSG-core-hours.png" alt="HORUS OSG Core-Hours"/>
 
 
 

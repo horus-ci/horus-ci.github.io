@@ -45,7 +45,7 @@ We have identified three types of computational servers that allow us to support
             <td>4</td>
             <td>2x25G</td>
             <td>2</td>
-            <td>128</td>
+            <td>64</td>
             <td>16.0</td>
         </tr>
         <tr>
@@ -59,7 +59,7 @@ We have identified three types of computational servers that allow us to support
             <td>-</td>
             <td>2x25G</td>
             <td>6</td>
-            <td>960</td>
+            <td>576</td>
             <td>10.7</td>
         </tr>
         <tr>
@@ -73,7 +73,7 @@ We have identified three types of computational servers that allow us to support
             <td>-</td>
             <td>2x25G</td>
             <td>6</td>
-            <td>2560</td>
+            <td>1536</td>
             <td>2.0</td>
         </tr>
         <tr>
@@ -87,7 +87,7 @@ We have identified three types of computational servers that allow us to support
             <td>-</td>
             <td>2x100G</td>
             <td>7</td>
-            <td>1344</td>
+            <td>2688</td>
             <td>8.0</td>
         </tr>
     </tbody>

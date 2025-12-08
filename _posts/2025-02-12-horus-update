@@ -1,0 +1,26 @@
+---
+layout: post
+category: article
+title: HORUS / OSiRIS update — new lg nodes, Ceph upgrade, and service reminder
+date: 2025-02-12
+tags: [news, infrastructure, slurm, ceph, osiris]
+---
+{% include JB/setup %}
+
+Just two quick announcements.
+
+1) We have added 7 new nodes to the HORUS SLURM cluster. These are large memory and large CPU hosts (1.5 TB of RAM, 384 logical CPUs, 2x100Gbps network) and are part of a new SLURM partition named 'lg'.
+2) We are updating the OSiRIS Ceph from 18.2.4 to 19.2.1.
+
+A reminder: we are running the infrastructure in a best-effort way until August 2026. For users that have a lot of data in OSiRIS, it may be worthwhile to start planning where it will go after August 2026.
+
+Please consider deleting data you no longer need or use.
+
+If you have any questions or concerns, you can contact us at horus-help 'at' umich.edu.
+
+Shawn McKee for the HORUS and OSiRIS projects
+
+
+<!--excerpt-->
+
+HORUS: 7 new large-memory CPU nodes added (SLURM partition 'lg') and OSiRIS Ceph upgrade to 19.2.1. Reminder: service is best-effort until Aug 2026; please plan and clean up unneeded data.

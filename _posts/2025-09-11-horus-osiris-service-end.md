@@ -7,8 +7,8 @@ tags: [news, osiris, horus, decommissioning, data-retention]
 ---
 {% include JB/setup %}
 
-Summary
-OSiRIS and HORUS will stop operations at the end of August 2026. Users with data or workloads on these platforms should plan and complete migrations well before that date.
+**Summary**
+**OSiRIS and HORUS will stop operations at the end of August 2026**. Users with data or workloads on these platforms should plan and complete migrations well before that date.
 
 Background
 OSiRIS (a National Science Foundation DIBBS project) provided software-defined storage for research in the Michigan region from September 2015 through August 2021 (with a one-year no-cost extension). HORUS (a CC* Regional Computing project) added compute resources to support OSiRIS users and the broader research community, operating from September 2022 through August 2025 (with a one-year no-cost extension). Since their formal funding periods ended, both projects have continued in a best-effort mode by their host institutions.

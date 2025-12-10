@@ -3,9 +3,7 @@ layout: post
 category: article
 title: HORUS Status and Plans — Infrastructure Updates and Future Services
 date: 2025-12-10
-author: HORUS Project Team
-categories: [news]
-tags: [HORUS, OSiRIS, Ceph, AlmaLinux, Puppet, LLM]
+tags: [news, HORUS, OSiRIS, Ceph, AlmaLinux, Puppet, LLM]
 ---
 {% include JB/setup %}
 
@@ -17,7 +15,7 @@ In approximately one month, we will be launching a new Large Language Model (LLM
 
 **AlmaLinux 9 Migration Continues**
 
-We are actively upgrading our remaining infrastructure hosts to AlmaLinux 9, continuing our effort to maintain a modern, secure, and well-supported operating system foundation. This migration includes critical services such as our perfSONAR monitoring systems, the Wiki, the LDAP authentication server, the ELK (Elasticsearch, Logstash, Kibana) logging and analytics system, and the COmanage identity management platform. These upgrades will improve security, performance, and long-term maintainability.
+We are actively upgrading our remaining infrastructure hosts to AlmaLinux 9, continuing our effort to maintain a modern, secure, and well-supported operating system foundation. The migration includes critical services such as our perfSONAR monitoring systems, the Wiki, the LDAP authentication server, the ELK (Elasticsearch, Logstash, Kibana) logging and analytics system, and the COmanage identity management platform. These upgrades will improve security, performance, and long-term maintainability.
 
 **Puppet Infrastructure Upgrade**
 

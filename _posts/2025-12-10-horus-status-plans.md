@@ -7,6 +7,8 @@ categories: [news]
 tags: [HORUS, OSiRIS, Ceph, AlmaLinux, Puppet, LLM]
 ---
 
+**Update, November 2026:** the services did not end on 31 August 2026. They continue on a best-effort basis through February 2027; see [the current status]({% post_url 2026-11-09-service-update-february-2027 %}).
+
 The HORUS project team is undertaking a range of renovations and upgrades to hosts, services, and tooling to improve reliability, security, and performance for current users. Many of these changes are ongoing and are intended to reduce incidents and simplify operations in the coming months.
 
 One exciting new capability we expect to make available to registered users in about one month is a dedicated LLM (large language model) focused on HORUS and OSiRIS. This tool will help users with questions about how to use resources, debug common problems, and optimise workflows. It is intended as a quick first-response aid to point users toward likely fixes and useful documentation — not as a replacement for our human support staff. For complex or unresolved issues, please continue to open support tickets so the team can follow up.

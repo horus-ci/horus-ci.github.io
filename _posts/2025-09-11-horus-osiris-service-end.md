@@ -7,6 +7,8 @@ tags: [news, osiris, horus, decommissioning, data-retention]
 ---
 {% include JB/setup %}
 
+**Update, November 2026:** the services did not end on 31 August 2026. They continue on a best-effort basis through February 2027; see [the current status]({% post_url 2026-11-09-service-update-february-2027 %}).
+
 **Summary**
 **OSiRIS and HORUS will stop operations at the end of August 2026**. Users with data or workloads on these platforms should plan and complete migrations well before that date.
 

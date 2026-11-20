@@ -93,9 +93,11 @@ We have identified three types of computational servers that allow us to support
     </tbody>
 </table>
 
+The two GPU servers left the Slurm cluster in October 2026 and are used for development of large language model tools; they are not available for jobs at present. The partitions and memory defaults that jobs see are described on the [SLURM page]({{ site.baseurl }}documentation/slurm.html).
+
 Dynamic partitioning of server resources is expected to be a main feature. For example, some of our GPU users simply need a single CPU and associated memory to match the total memory of a GPU. A server with four GPUs would only require assigning four hyper-threaded CPUs and about 320G of memory, leaving 28 CPUs and 192G of memory idle. We need to be able to dynamically make those CPUs and memory accessible for other jobs that just require one or more CPUs and a smaller amount of memory.
 
-OSiRIS combined with HORUS makes a great enabler for many of the science domains in the project. Currently, OSiRIS has approximately 6 Petabytes of raw storage available for use, out of 12.0 Petabytes deployed. Using erasure-coding techniques (8+3), the 6 Petabytes translates into roughly 4.3 PB of usable space that did not need to be paid for by HORUS.
+OSiRIS combined with HORUS makes a great enabler for many of the science domains in the project. In November 2026 OSiRIS provides about 11 PiB of raw storage, about 62% of it in use. Data is kept in three copies, one at each site. This storage did not need to be paid for by HORUS.
 
 ## High-Performance Network
 
@@ -127,23 +129,21 @@ HORUS uses software to adhere to its guiding principles of fairly sharing resour
 __Authentication and Authorization__
 
 - __InCommon__, a set of community-designed identity and access management services
-- __CoManage__, identity lifecycle management
-- __Grouper__ for creating and managing roles, groups, and permissions
+- __COmanage__, identity lifecycle management, research groups and their members
 - __CILogon__, for logging on to cyberinfrastructure
 
 __Resource allocation and management__
 
-- __HTCondor__, used to manage fair-share access for computational tasks.
-- __HTCondor-CE__, a meta-scheduler used as a “door” to a set of resources.
-- __SLURM__, used to schedule jobs and interface with Open OnDemand (OOD).
-- __OOD__, Open OnDemand which provides a user web interface to HORUS resources.
-- __NVIDIA MIG__, used to subdivide a GPU (cores and memory) into up to seven smaller instances, allowing more jobs to share a GPU.
+- __SLURM__, schedules all jobs with fair-share priority and holds each job to the memory it requests.
+- __OOD__, Open OnDemand, which provides a user web interface to HORUS resources.
+- __OSG pilot jobs__: the OSG submits pilot jobs to HORUS's Slurm, which run OSPool work on otherwise idle cores.
 - __Ceph__, with quotas to manage storage use in OSiRIS.
 
 __Monitoring and Accounting__
-- __Elasticsearch__, gathers data from syslogs and other sources for aggregation, visualization, analytics, and correlation.
-- __CheckMK__, intelligent server and host monitoring system capable of validating service states and tracking resource usage.
+- __OpenSearch__, collects logs from all systems for search, analysis and correlation.
+- __CheckMK__, server and service monitoring.
+- __Prometheus and Grafana__, metrics, dashboards and alerts.
 - __perfSONAR__, used to test and monitor network behavior across infrastructure.
-- __AlmaLinux9__, for accounting and auditing to augment usage and security information.
+- __AlmaLinux 9__, whose auditing tools add usage and security information.
 
-Deployments of many of these tools (CoManage, Grouper, Elasticsearch, CheckMK, perfSONAR) already were in place for OSiRIS and have been reconfigured to accommodate HORUS. HTCondor is the HORUS batch scheduler, used with OSG/PATh to configure the appropriate connection to users' hosted Compute Element (CE) based upon HTCondor-CE. The HTCondor services, as well as all other required HORUS services, will rely on the virtualization platform already in place for OSiRIS. This virtualization platform includes four powerful virtualization hosts at each of our sites (UM, MSU, WSU) running libvirt. In addition, we have access to SLATE infrastructure, which provides the ability to orchestrate containers via Kubernetes if particular tools or jobs would benefit from that.
+Many of these tools (COmanage, OpenSearch, CheckMK, perfSONAR) were already in place for OSiRIS and were extended to HORUS. Slurm is the HORUS batch scheduler; OSG/PATh users reach HORUS through pilot jobs that the OSG submits to it ([OSG engagement]({{ site.baseurl }}documentation/osgengage.html)). The HORUS services run as virtual machines on the OSiRIS virtualization hosts (libvirt) at each site (UM, MSU, WSU).

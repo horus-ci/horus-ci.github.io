@@ -20,5 +20,7 @@ The weekly core-hours provided by HORUS and used by OSG jobs from January 4, 202
 
 <img style="width: 90%" src="{{IMAGE_PATH}}/documentation/osgengage/HORUS-OSG-core-hours.png" alt="HORUS OSG Core-Hours"/>
 
+HORUS still contributes its idle cycles to the OSPool. In November 2026 more than a thousand OSG pilot jobs typically run at once, about half of them on the lg nodes. See the [November 2026 update]({% post_url 2026-11-19-horus-and-the-ospool %}).
+
 
 

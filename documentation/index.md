@@ -22,7 +22,7 @@ Questions:  <a href="mailto:horus-help@umich.edu">horus-help@umich.edu</a>
 <a href="ondemand.html">Accessing Open OnDemand:</a> How to access Open OnDemand and upload your data into your HORUS work space
 
 <a href="slurm.html">Using SLURM:</a>
- How to create SLURM jobs, and select job queues based on your project needs 
+ How to create SLURM jobs, choose a partition and request memory
 
 <a href="osgengage.html">OSG Engagement:</a> Details about our work with the OSG-PATh project to make HORUS broadly accessible
  

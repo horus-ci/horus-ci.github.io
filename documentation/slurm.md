@@ -26,8 +26,10 @@ In the editor window, enter the following bash code and click 'Save'
 
 	#!/bin/bash
 	# JOB HEADERS HERE
-	# This sets the partition we’re requesting. Other options are lm and gp
+	# This sets the partition we’re requesting. The others are batch (the default), lm and lg: see the table below
 	#SBATCH -p lc
+	# Memory for the whole job on its node; see "Memory" below
+	#SBATCH --mem=2G
 	hostname
 	sleep 60
 	echo "Hello World from a HORUS large Compute (lc) node"
@@ -40,6 +42,31 @@ To view all active jobs you submitted, go to the Open OnDemand home page, and th
 
 <img style="width: 100%" src="{{IMAGE_PATH}}/documentation/slurm/ood_active_jobs.png" alt="Active Jobs"/>
 
+
+<h2>Partitions</h2>
+
+<table class="styled-table">
+    <thead>
+        <tr><th>Partition</th><th>Nodes</th><th>Each node</th><th>Default memory per CPU</th><th>Limits</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>batch (default)</td><td>6 Dell R6525 (um-lc01/02, msu-lc01/02, wsu-lc01/02)</td><td>256 CPUs, 500 GiB</td><td>4,000 MB (at most 4,050)</td><td>-</td></tr>
+        <tr><td>lc</td><td>the same 6 nodes</td><td>256 CPUs, 500 GiB</td><td>2,000 MB</td><td>2 days 2 hours per job; at most 240 CPUs per node</td></tr>
+        <tr><td>lm (large memory)</td><td>6 Dell R6525</td><td>96 CPUs, about 1 TiB</td><td>2,000 MB</td><td>-</td></tr>
+        <tr><td>lg</td><td>7 Lenovo SR665 V3</td><td>384 CPUs, about 1.5 TiB, 894 GB local /scratch</td><td>3,000 MB</td><td>at most 192 CPUs per node; mostly used by OSG jobs</td></tr>
+    </tbody>
+</table>
+
+A job in <code>lc</code> that asks for more than 2 days 2 hours, or for no time limit, stays pending with the reason <code>PartitionTimeLimit</code>.
+
+<h2>Memory</h2>
+
+Since November 2026 each job is held to the memory it requests:
+
+- Ask for memory with `#SBATCH --mem=8G` (for the whole job on each node) or `#SBATCH --mem-per-cpu=4G`. Without either, the job gets the partition's default per CPU (table above).
+- A job may use up to 10% more than it asked for. In that margin it is slowed down while the system reclaims memory.
+- A job that goes beyond that is stopped, and its state is `OUT_OF_MEMORY`. Other jobs and the node are not affected.
+- To see what a finished job used: `sacct -j <jobid> -o JobID,ReqMem,MaxRSS,State`. `MaxRSS` can include file cache, so it may be a little higher than the job really needed. Ask for somewhat more than the peak you see.
 
 For more information on the SLURM options you can use in your script, please see the documentation for the <a href="https://slurm.schedmd.com/sbatch.html">sbatch</a> command.
 
